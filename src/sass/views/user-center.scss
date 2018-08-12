@@ -1,0 +1,379 @@
+@import '../common/common.scss';
+@import '../component/card/coin-card.scss';
+@import '../component/card/user-press-card.scss';
+@import '../component/form/form.scss';
+@import '../component/layer/confirm.scss';
+@import '../component/card/press-carb.scss';
+@import '../component/card/deep-news-card.scss';
+.main-container {
+  .user-page {
+    display: flex;
+    margin: 40px auto 0;
+    width: 942px;
+    aside {
+      position: relative;
+      margin-top: 16px;
+      width: 193px;
+      height: 756px;
+      nav {
+        >ul.tabs {
+          display: flex;
+          flex-flow: column;
+          align-items: flex-start;
+          width: 193px;
+          .level-menu {
+            width: 100%;
+            height: 48px;
+            color: #707d8a;
+            text-align: left;
+            cursor: pointer;
+            font-size: 14px;
+            .sub-menu {
+              display: none;
+              margin-left: 24px;
+            }
+            &.active {
+              position: relative;
+              color: $em;
+              &:after {
+                position: absolute;
+                top: 8px;
+                right: 0;
+                content: '';
+                width: 2px;
+                height: 32px;
+                background-color: $blue;
+              }
+              &:not(.tab-item) {
+                height: auto;
+                font-weight: bold;
+                color: $em;
+                .level-title {
+                  height: 48px;
+                }
+                .sub-menu {
+                  display: flex;
+                  flex-flow: column;
+                  justify-content: right;
+                }
+              }
+            }
+          }
+          .tab-item {
+            margin-right: 0;
+            line-height: 48px;
+            height: 48px;
+            cursor: pointer;
+            &.active::before {
+              height: 0;
+            }
+          }
+        }
+      }
+      .hover-line {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 2px;
+        height: 756px;
+        background-color: $division;
+      }
+    }
+    >.tabs-content {
+      position: relative;
+      padding-left: 95px;
+      width: 751px;
+      min-height: 756px;
+      .division-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 756px;
+        background-color: $division;
+      }
+      .content-item {
+        display: none;
+        width: 656px;
+        flex-flow: column;
+        align-items: left;
+        font-size: 13px;
+        &.active {
+          display: flex;
+        }
+        .content-title {
+          margin: 8px 0 32px 0;
+          font-size: 24px;
+          color: #0B1013;
+          text-align: left;
+        }
+        >div {
+          width: 100%;
+        }
+        &.base-info,
+        &.account-manage {
+          input {
+            padding: 10px 16px;
+            background: rgba(238, 242, 246, 0.65);
+            border: 1px solid $input-border;
+            border-radius: 3px;
+          }
+          section {
+            display: flex;
+            padding: 23px 0;
+            border-bottom: $division solid 1px;
+            align-items: center;
+            width: 100%;
+            text-align: left;
+            >span {
+              width: 189px;
+              font-size: 13px;
+              color: #394551;
+            }
+            >div {
+              display: flex;
+              justify-content: space-between;
+              width: 464px;
+              align-items: center;
+              .tip {
+                font-size: 13px;
+                color: $assist2;
+              }
+              .action {
+                color: $blue;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        &.base-info {
+          .id {
+            height: 64px;
+          }
+          .portrait {
+            height: 95px;
+            .portrait-container>div {
+              position: relative;
+              &.add-portrait>span {
+                display: flex;
+                border: .5px solid $division;
+                border-radius: 50%;
+                width: 48px;
+                height: 48px;
+                background: #eef2f6;
+                color: #a8b4bf;
+                justify-content: center;
+                align-items: center;
+                >i {
+                  font-size: 48px;
+                }
+              }
+              form {
+                position: absolute;
+                width: 0;
+                height: 0;
+                input {
+                  width: 48px;
+                  height: 48px;
+                  opacity: 0;
+                }
+              }
+              img {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+              }
+              .icon-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #FFFFFF;
+                box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+                vertical-align: middle;
+                text-align: center;
+                font-size: 14px;
+                color: #707D8A;
+                padding-left: 1px;
+              }
+            }
+          }
+          .nick {
+            height: 87px;
+            input {
+              width: 272px;
+            }
+          }
+          .intro {
+            height: 203px;
+            align-items: flex-start;
+            >span {
+              margin-top: 10px;
+            }
+            >div {
+              flex-flow: column;
+              align-items: flex-start;
+              >div {
+                width: 100%;
+                input {
+                  width: 100%;
+                  height: 128px;
+                }
+              }
+              .tip {
+                margin-top: 8px;
+              }
+            }
+            textarea {
+              width: 100%;
+              height: 128px;
+              padding: 10px 16px;
+              background: rgba(238, 242, 246, 0.65);
+              border: 1px solid rgba(199, 210, 220, 0.75);
+              border-radius: 3px;
+            }
+          }
+          .button {
+            margin-top: 23px;
+            border-radius: 3px;
+            width: 128px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 13px;
+            background-color: #5F99DA;
+            color: #fff;
+          }
+        }
+        &.account-manage {
+          input {
+            width: 272px;
+          }
+          .account-item {
+            i {
+              font-size: 24px;
+              color: $assist2;
+            }
+          }
+        }
+        &[data-tab-5] {
+          width: 776px;
+        }
+        .coins-container {
+          display: flex;
+          flex-flow: row wrap;
+          .coin-card {
+            margin: 0 24px 24px 0;
+          }
+        }
+      }
+    }
+    .collect-none>div {
+      margin-top: 80px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 140px;
+        border-radius: 50%;
+      }
+      .tips {
+        margin-top: 32px;
+        font-size: 16px;
+        color: #333333;
+      }
+      .postscript {
+        margin-top: 8px;
+        font-size: 13px;
+        color: #707D8A;
+      }
+      .button {
+        margin-top: 32px;
+        width: 100px;
+        height: 32px;
+      }
+    }
+    .more {
+      margin-top: 32px;
+      height: 40px;
+      width: 100%;
+      text-align: center;
+      color: #5f99da;
+      .button {
+        height: 100%;
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+    .img-layer {
+      .layer-header {
+        .tab-item {
+          color: $strong;
+        }
+      }
+      .action {
+        display: flex;
+        align-items: center;
+      }
+      .layer-dialog {
+        padding: 0 16px 32px 16px;
+      }
+      .cropper>img {
+        height: 300px;
+      }
+      .cropper-preview {
+        display: flex;
+        align-items: flex-end;
+        height: 200px;
+        padding: 32px 0;
+        overflow: hidden;
+        .big {
+          margin-right: 32px;
+          height: 141px;
+          width: 141px;
+          overflow: hidden;
+          >img {
+            height: 109px;
+            width: 109px;
+          }
+        }
+        .middle {
+          margin-right: 32px;
+          height: 121px;
+          width: 121px;
+          overflow: hidden;
+          >img {
+            height: 89px;
+            width: 89px;
+          }
+        }
+        .small {
+          height: 88px;
+          width: 88px;
+          overflow: hidden;
+          >img {
+            height: 56px;
+            width: 56px;
+          }
+        }
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .portrait-save {
+          padding: 0 16px;
+          width: auto;
+          height: 32px;
+          background-color: $blue;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,265 @@
+@import '../common/common.scss';
+@import '../component/tabs.scss';
+@import '../component/button.scss';
+@import '../component/card/press-carb.scss';
+@import '../component/card/deep-news-card.scss';
+.main-container {
+  .coin-detail-page {
+    display: flex;
+    width: 1136px;
+    margin: auto;
+    .aside {
+      // 这里的margin-top跟其他页面的aside不一样
+      margin: 40px 112px 0 0;
+      width: 272px;
+      text-align: left;
+      .column {
+        padding: 16px 0;
+        border-bottom: $division solid 1px;
+        width: 100%;
+      }
+      .logo {
+        position: relative;
+        margin-bottom: 24px;
+        height: 144px;
+        width: 144px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid $division;
+        >img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 144px;
+        }
+        >span {
+          display: flex;
+          align-items: center;
+          width: 144px;
+          height: 144px;
+          border-radius: 50%;
+          >i {
+            font-size: 140px;
+            color: #EEF2F6;
+          }
+        }
+      }
+      .info {
+        padding-top: 0;
+        .head-title {
+          margin-bottom: 8px;
+          font-size: 32px;
+          color: #0B1013;
+        }
+        .source {
+          .abbrev {
+            font-size: 13px;
+            font-weight: bold;
+            color: #707d8a;
+          }
+          a {
+            color: $link;
+            &::after {
+              content: ',';
+              color: $link;
+            }
+            &:last-child {
+              &::after {
+                content: '';
+              }
+            }
+          }
+        }
+        .office-platform {
+          width: 100%;
+          display: flex;
+          flex-flow: row wrap;
+          .office {
+            width: 24px;
+            margin: 8px 8px;
+          }
+        }
+      }
+      .market {
+        display: flex;
+        justify-content: space-between;
+        .main {
+          .price {
+            margin-bottom: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #0b1013;
+          }
+          .data-source {
+            font-size: 11px;
+            color: #707d8a;
+          }
+        }
+        .ratio {
+          font-size: 16px;
+        }
+      }
+      .desc {
+        .white-paper {
+          display: flex;
+          align-items: center;
+          margin-bottom: 21px;
+          font-size: 13px;
+          color: #5f99da;
+          i {
+            color: $assist2;
+            font-size: 20px;
+          }
+          span {
+            display: inline-block;
+            padding-left: 16px;
+          }
+        }
+        .follow {
+          margin-bottom: 40px;
+          height: 32px;
+          width: 100%;
+          font-size: 12px;
+          text-align: center;
+          vertical-align: middle;
+          color: #fff;
+          background-color: #5f99da;
+          &:hover {
+            color: #5f99da;
+            background-color: #fff;
+          }
+          &::before {
+            content: '关注';
+          }
+          &.active {
+            color: #5f99da;
+            background-color: #fff;
+            &:hover {
+              color: #fff;
+              background-color: #5f99da;
+            }
+            &::before {
+              content: '已关注';
+            }
+          }
+        }
+        .intro {
+          font-size: 12px;
+          line-height: 20px;
+          color: #394551;
+          max-height: 180px;
+          overflow: hidden;
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            margin-top: 24px;
+            font-size: 20px;
+            color: #0B1013;
+            line-height: 30px;
+          }
+          p {
+            // padding: 16px 0 24px 0;
+            border-bottom: 1px solid $division;
+            word-break: keep-all;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+        .desc-more {
+          margin-top: 8px;
+          font-size: 12px;
+          color: #5f99da;
+          line-height: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    section.content {
+      margin-top: 16px;
+      width: 752px;
+      .more {
+        margin-top: 32px;
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        color: #5f99da;
+        .button {
+          height: 100%;
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+    .layer {
+      border-radius: 6px;
+      .layer-dialog {
+        width: 752px;
+        height: 640px;
+        background-color: #fff;
+        box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.08);
+      }
+      .layer-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 24px;
+        border-bottom: $division solid 2px;
+        height: 64px;
+        span {
+          font-size: 16px;
+          color: #0B1013;
+          line-height: 24px;
+          font-weight: bold;
+        }
+      }
+      ::-webkit-scrollbar {
+        width: 4px;
+        opacity: 1; // height: 16px;
+        // background-color: #F5F5F5;
+      }
+      ::-webkit-scrollbar-track {
+        display: none;
+      }
+      ::-webkit-scrollbar-thumb {
+        opacity: 0.3;
+        background: #707D8A;
+        border-radius: 3px;
+        width: 4px;
+      }
+      .layer-content {
+        padding: 24px;
+        height: 575px;
+        overflow-y: scroll;
+        font-size: 13px;
+        color: #394551;
+        line-height: 22px;
+        text-align: left;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin-top: 24px;
+          font-size: 20px;
+          color: #0B1013;
+          line-height: 30px;
+        }
+        p {
+          padding: 16px 0 24px 0;
+          border-bottom: 1px solid $division;
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

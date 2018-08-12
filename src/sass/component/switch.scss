@@ -1,0 +1,54 @@
+.layui-form input[type=checkbox] {
+  display: none;
+}
+
+.layui-form-switch {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  height: 22px;
+  line-height: 22px;
+  width: 42px;
+  padding: 0 5px;
+  margin-top: 8px;
+  border: 1px solid #C7D2DC;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #C7D2DC;
+  transition: .1s linear;
+}
+
+.layui-form-switch em {
+  position: absolute;
+  left: 5px;
+  right: auto;
+  color: #fff;
+  width: 25px;
+  padding: 0;
+  text-align: center;
+  color: #999;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.layui-form-switch i {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: .1s linear;
+}
+
+.layui-form-switch {
+  &[checked="true"],
+  &[checked="checked"] {
+    border-color: #5F99DA;
+    background-color: #5F99DA;
+    i {
+      left: 19px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '../common/common.scss';
+@import '../component/tabs.scss';
+@import '../component/card/news-carb.scss';
+
+.main-container{
+  .search-page{
+    width: 752px;
+    margin: auto;
+    .search-key{
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 24px;
+      font-size: 24px;
+      color: $strong;
+    }
+  }
+}

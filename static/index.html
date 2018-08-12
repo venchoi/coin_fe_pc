@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./static/css/index.css">
+    </head>
+    <body>
+        <header class="page-header">
+            <nav class="l-side">
+                <ul class="tabs">
+                    <li class="tab-item active"><a href="./index.html">7x24快讯</a></li>
+                    <li class="tab-item"><a href="./deep.html">深度</a></li>
+                    <li class="tab-item"><a href="">关注</a></li>
+                </ul>
+            </nav>
+            <div class="r-side">
+                <div class="search"><a href=""><i class="icont-seach"></i></a></div>
+                <div class="log"><a href="">登录/注册</a></div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="news-component">
+                <!-- todo foreach -->
+                <section class="news-list">
+                    <div class="date">
+                        <div class="head-title"><time class="day">24</time></div>
+                        <time class="month date-time">2018年5月</time>
+                        <time class="week date-time">星期一</time>
+                    </div>
+                    <div class="date-news">
+                        <!-- todo foreach -->
+                        <section class="news-card">
+                            <div class="news">
+                                <time class="text-time">14:00</time>
+                                <div class="details">
+                                    <p class="text">
+                                        <span class="title">据说搜狐新闻高管蔡明军将离职创业区块链，张朝阳参与投资</span>
+                                        <span class="abstract">搜狐新闻客户端总经理蔡明军准备离职创业，All-in 区块链，而搜狐大老板张朝阳也参与了这一项目的融资。蔡认为，传统互联网经济的创新已经停滞，基于区块链技术的分布式社群经济是历史性的选择和机会，要引导到有价值的场景中去。背后也很可能是搜狐试水区块链的一次低调尝试。（中证网) </span>
+                                        <span class="coin-tag"></span>
+                                        <span class="topic-tag"><a href="">#PXN#</a></span>
+                                    </p>
+                                    <div class="actions btn-groups-s">
+                                        <span class="btn btn-s support active">100</span>
+                                        <span class="btn btn-s oppose">100</span>
+                                        <span class="btn btn-s default collect">收藏</span>
+                                        <span class="btn btn-s default share">分享</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+            <aside class="others-component">
+                <!-- <section class="adv"></section> -->
+                <section class="component articles">
+                    <header class="component-head">
+                        <span class="component-title">热文</span>
+                        <span class="head-actions"><a href="">更多</a></span>
+                    </header>
+                    <div class="component-content hot-news">
+                        <!-- todo foreach -->
+                        <section class="news">
+                            <!-- todo delete href -->
+                            <a href="./news-detail.html">
+                                <div class="news-abstract">
+                                    <!-- todo 字符串截取 -->
+                                    <p class="title">450份区块链研报显示： 应用研究成热点 ，发展趋势、融资状况无人问津的…</p>
+                                    <time class="date-time">2018-02-30</time>
+                                </div>
+                                <!-- todo if -->
+                                <img src="" alt="">
+                            </a>
+                        </section>
+                    </div>
+                </section> 
+                <section class="component market">
+                    <header class="component-head">
+                        <span class="component-title">行情</span>
+                        <!-- <span class="head-actions"><a href="">刷新</a></span> -->
+                    </header>
+                    <div class="coins-market">
+                        <!-- todo foreach -->
+                        <section class="coin">
+                            <a href="">
+                                <div class="coin-logo">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="coin-info">
+                                    <div>
+                                        <div class="title name">比特币</div>
+                                        <div class="text-time source">来源：Huobi</div>
+                                    </div>
+                                    <div>
+                                        <div class="title price">$7988.74</div>
+                                        <div class="ratio">+7.98%</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </section>
+                    </div>
+                </section>
+            </aside>
+        </main>
+        <footer class="page-footer"></footer>
+    </body>
+    <!-- <script src="../index.js"></script> -->
+</html>

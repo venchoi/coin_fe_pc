@@ -1,0 +1,35 @@
+@import '../common/common.scss';
+@import '../component/card/coin-card.scss';
+@import '../component/button.scss';
+
+.coin-quotation-page {
+  margin: 40px auto;
+  width: 1164px;
+  .column{
+    .header{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      .title{
+        font-weight: bold;
+        font-size: 16px;
+        color: $strong;
+      }
+    }
+    .coins-container {
+      padding-top: 0;
+    }
+    .more {
+      margin-top: 32px;
+      height: 40px;
+      width: 100%;
+      text-align: center;
+      color: #5f99da;
+      .button {
+        height: 100%;
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import '../common/variables.scss';
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 60px;
+  border-radius: 3px;
+  line-height: 30px;
+  border: 1px solid #eef2f6;
+  text-align: center;
+  font-size: 12px;
+  background: #fff;
+  color: $main;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  & + .button{
+    margin-left: 8px;
+  }
+  &:hover,
+  &:active,
+  &.active{
+    color: #fff;
+    background: $main;
+  }
+  > .iconfont {
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 8px;
+  }
+  &.small{
+    width: 44px;
+    font-size: 11px;
+    > .iconfont {
+      margin-right: 6px;
+    }
+  }
+  &.large{
+    > .iconfont {
+      margin-right: 8px;
+    }
+  }
+  &.main,
+  &.good,
+  &.bad,
+  &.search{
+    color: $assist1;
+    background: #EEF2F6;
+    &:hover,
+    &:active,
+    &.active{
+      color: #fff;
+    }
+  }
+  &.main{
+    &:hover,
+    &:active,
+    &.active{
+      background: $main;
+    }
+  }
+  &.good{
+    &:hover,
+    &:active,
+    &.active{
+      background: $green;
+    }
+  }
+  &.bad{
+    &:hover,
+    &:active,
+    &.active{
+      background: $red;
+    }
+  }
+  &.search{
+    &:hover,
+    &:active,
+    &.active{
+      background: $search;
+    }
+  }
+}

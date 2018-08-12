@@ -1,0 +1,53 @@
+article[press-carb] {
+  display: flex;
+  text-align: left;
+  margin-top: 20px;
+  a{
+    color: $main;
+  }
+  .article-container{
+    flex: 1;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $division;
+    line-height: 22px;
+    > h2 {
+      font-size: 13px;
+      display: inline;
+    }
+    .division{
+      display: inline;
+    }
+    .article-content{
+      display: inline;
+      font-size: 13px;
+      color: $primary;
+      img{
+        display: block;
+        height: 160px;
+        margin-top: 12px;
+        border-radius: 5px;
+      }
+    }
+    div.footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+      color: $assist2;
+    }
+    .button-container{
+      display: flex;
+      .button.collect {
+        & > span::before {
+          content: '收藏';
+        }
+        &.active > span::before {
+          content: '已收藏';
+        }
+      }
+    }
+  }
+  &:last-child > .article-container {
+    border-bottom: none;
+  }
+}

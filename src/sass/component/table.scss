@@ -1,0 +1,135 @@
+.table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  color: #394551;
+}
+
+.table-head {
+  display: flex;
+  flex-direction: column;
+  background: #394551;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: #FFFFFF;
+      .rank {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4px;
+        height: 100%;
+        line-height: 100%;
+        i {
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          font-size: 12px;
+        }
+        i.icon-triangle-down {
+          transform: translate(0, -6px);
+        }
+      }
+      &.rank-th {
+        cursor: pointer;
+        &:hover {
+          background-color: #707D8A; // transition: all 1s linear;
+        }
+      }
+      &[data-rank-type="+"] span>i:first-child,
+      &[data-rank-type="-"] span>i:last-child {
+        color: #5F99DA;
+      }
+    }
+  }
+}
+
+.tbody-container {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+    >a {
+      &:hover {
+        background: rgba(238, 242, 246, 0.6);
+      }
+    }
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    &:hover {
+      background: rgba(238, 242, 246, 0.6);
+    }
+  }
+}
+
+// 条纹表格
+.table-striped {
+  .tbody-container {
+    ul:nth-of-type(odd) {
+      background: rgba(#EEF2F6, .4);
+      &:hover {
+        background: rgba(238, 242, 246, 0.6);
+      }
+    }
+  }
+}
+
+.page-container {
+  display: flex;
+}
+
+.page-item {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  &.active,
+  &:hover {
+    background: #5F99DA;
+    color: #fff;
+  }
+  &.active {
+    cursor: default;
+  }
+}
+
+.turn-page {
+  color: rgba(57, 69, 81, 0.65);
+}
+.turn-page.disabled {
+  cursor: default;
+  &:hover {
+    background: #FFFFFF;
+    color: rgba(57, 69, 81, 0.65);
+  }
+}
+.next-page {
+  margin-right: 0;
+}
+
+ul.page {
+  display: flex;
+  font-size: 14px;
+  color: #394551;
+  text-align: center;
+}

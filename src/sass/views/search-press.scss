@@ -1,0 +1,71 @@
+@import '../common/common.scss';
+@import '../component/tabs.scss';
+@import '../component/card/coin-list.scss';
+@import '../component/card/press-carb.scss';
+@import '../component/card/deep-news-card.scss';
+@import '../component/card/coin-card.scss';
+
+.main-container{
+  .search-page{
+    width: 1136px;
+    margin: auto;
+    .search-key{
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 24px;
+      font-size: 24px;
+      color: $strong;
+      text-align: left;
+      > strong {
+        margin-left: -14px;
+      }
+    }
+    .search-result {
+      position: relative;
+      .search-tabs {
+        > nav {
+          border-bottom: $division solid 2px;
+          height: 64px;
+          width: 752px;
+        }
+      }
+      .result-press{
+        width: 1135px;
+        margin: auto;
+        .content-item{
+          width: 752px;
+          margin-right: 64px;
+          &.coins-container {
+            padding-top: 0;
+            width: 776px;
+            .panel:first-of-type {
+              padding-top: 32px;
+            }
+          }
+        }
+        .more {
+          margin-top: 32px;
+          height: 40px;
+          width: 100%;
+          text-align: center;
+          color: #5f99da;
+          .button {
+            height: 100%;
+            width: 100%;
+            font-size: 14px;
+          }
+        }
+        .no-single-result {
+          width: 752px;
+          margin-top: 30px;
+          text-align: center;
+          font-size: 16px;
+          color: #707D8A;
+        }
+      }
+    }
+  }
+  em {
+    color: $search;
+  }
+}

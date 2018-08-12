@@ -1,0 +1,49 @@
+.confirm {
+  .layer-content {
+    display: flex;
+    flex-flow: column;
+    padding: 32px 32px 24px 32px;
+    max-width: 433px;
+    text-align: left;
+    .confirm-title {
+      font-size: 16px;
+      color: $strong;
+      i {
+        display: inline-block;
+        margin-right: 14px;
+        width: 22px;
+        height: 19px;
+        &.icon-warning {
+          color: #ffa162;
+        }
+        &.icon-success {
+          color: $green;
+        }
+        &.icon-fault {
+          color: $red;
+        }
+      }
+    }
+    .confirm-content {
+      margin: 12px 0 0 38px;
+      font-size: 14px;
+      color: rgba(0,0,0,0.65);
+      line-height: 22px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 24px;
+      .button {
+        margin-right: 8px;
+        color: #394551;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.active {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

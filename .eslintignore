@@ -1,0 +1,17 @@
+build/*.js
+config/*.js
+src/assets/dep/*.js
+test.js
+dist
+src/lib/jqExtend/*.js
+src/vendor/*/*.js
+src/lib/ajax/LoopRequest.js
+src/util/arrayUtil.js
+src/lib/cropper/cropper.js
+src/js/user-test.js
+src/js/layui.js
+src/lib/jqExtend/modal.js
+src/vendor/*
+src/vendor/photoswipe/*
+src/component/photoswipe/init.js
+src/lib/notification_v2.js

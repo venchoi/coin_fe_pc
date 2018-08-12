@@ -1,0 +1,36 @@
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  z-index: 999;
+  .tooltip-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    line-height: 100%;
+    .tooltip-icon {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #394551;
+      i {
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+  }
+  .tooltip-content {
+    position: absolute;
+    margin-top: 10px;
+    top: 16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    .content-container {
+      padding: 10px;
+      background-color: rgba(#394551, 0.85);
+      color: #fff;
+      border-radius: 4px;
+    }
+    .tooltip-inner {}
+  }
+}

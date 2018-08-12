@@ -1,0 +1,47 @@
+<div class="layer new-phone form-container hidden">
+  <div class="layer-bg"></div>
+  <div class="layer-dialog bind-phone">
+    <div class="layer-header bind-header">
+      <ul class="tabs">
+        <li class="tab-item">验证新手机号码</li>
+      </ul>
+      <div class="head-actions">
+        <div class="close">
+          <i class="iconfont icon-close"></i>
+        </div>
+      </div>
+    </div>
+    <div class="layer-content bind-content">
+      <div class="content-item">
+        <div class="form-content" data-type="verification ">
+          <div class="phone">
+            <div class="input">
+              <input type="text" class="area-code" value="+86" placeholder="+86" disabled>
+              <span class="division"></span>
+              <input type="tel" class="phone-number" placeholder="手机号" />
+              <div class="tip"></div>
+            </div>
+          </div> 
+          <div class="check-code">
+            <div class="input">
+              <input type="text" placeholder="输入右侧编码">
+              <div class="tip"></div>
+            </div>
+            <span>
+              <img src="/tool/verify/wapi/ajax.html" alt="">
+            </span> 
+          </div>
+          <div class="verification">
+            <div class="input">
+              <input type="tel" class="verification-code" placeholder="手机验证码" />
+              <div class="tip"></div>
+            </div>
+            <div class="button main request-button" data-msg-type="bind">获取验证码</div>
+          </div>
+        </div>
+        <div class="button button-form active bind" data-type="new">完成</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,90 @@
+@import '../../common/variables.scss';
+@import '../button.scss';
+// 深度卡片
+.news-container{
+  width: 100%;
+  .article > a{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 24px 0;
+    min-height: 170px;
+    border-bottom: 1px solid $division;
+    .main-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-self: stretch;
+      flex: 1;
+      .title{
+        color: $strong;
+        font-size: 16px;
+        margin-bottom: 8px;
+        &.hot{
+          &:before{
+            content: '热门';
+            display: inline-block;
+            width: 39px;
+            height: 20px;
+            background: $red;
+            color: #fff;
+            font-size: 12px;
+            vertical-align: text-top;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 3px;
+            font-weight: lighter;
+            transform: scale(0.9);
+          }
+        }
+      }
+      .text{
+        flex: 1;
+        color: $primary;
+        word-wrap: break-word;
+        word-break: break-all;
+        font-size: 13px;
+        line-height: 22px;
+        padding-bottom: 20px;
+      }
+      .other{
+        display: flex;
+        justify-content: space-between;
+        .author{
+          display: flex;
+          align-items: center;
+          color: $assist2;
+          .icon{
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            img{
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .button.collect {
+          & > span::before {
+            content: '收藏';
+          }
+          &.active > span::before {
+            content: '已收藏';
+          }
+        }
+      }
+    }
+    .img{
+      width: 176px;
+      height: 128px;
+      margin-left: 32px;
+      border-radius: 4px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
+}

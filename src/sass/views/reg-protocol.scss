@@ -1,0 +1,30 @@
+@import '../common/common.scss';
+.main-container {
+  text-align: left;
+  > div {
+    width: 752px;
+    margin: auto;
+    margin-top: 40px; 
+  }
+  .head-title {
+    margin-bottom: 15px;
+    line-height: $line-height-xxxl;
+    font-size: $font-size-xxxl;
+    font-weight: bold;
+    color: $em;
+    text-align: center;
+  }
+  .section-title {
+    font-size: 20px;
+    color: #0B1013;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  p {
+    padding: 24px;
+    font-size: 13px;
+    color: #394551;
+    line-height: 22px;
+    text-align: left;
+  }
+}

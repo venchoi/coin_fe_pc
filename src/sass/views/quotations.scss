@@ -1,0 +1,178 @@
+@import '../common/common.scss';
+@import '../component/tabs.scss';
+@import '../component/button.scss';
+@import '../component/table.scss';
+.main-container {
+  .quotations-page {
+    // display: flex;
+    width: 1136px;
+    margin: auto;
+    nav {
+      height: 64px;
+      border-bottom: rgba(32, 42, 51, 0.08) solid 2px;
+    }
+    .content-item {
+      position: relative;
+      margin-top: 24px;
+    }
+    .tabs-content {
+      .all-table,
+      .concern-table {
+        .range {
+          width: 60px;
+        }
+        .coin-name {
+          width: 211px;
+          >a{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .market-value,
+        .price {
+          width: 126px;
+        }
+        .coin-amount,
+        .total-amount {
+          width: 179px;
+        }
+        .ratio {
+          width: 135px;
+        }
+      }
+      .ex-table {
+        .range {
+          width: 60px;
+        }
+        .ex-name {
+          width: 190px;
+        }
+        .total-amount,
+        .support-currency {
+          width: 179px;
+        }
+        .trade-pair,
+        .country {
+          width: 126px;
+        }
+        .action {
+          width: 136px;
+        }
+      }
+      .page-container-up {
+        position: absolute;
+        top: -72px;
+        right: 0;
+      }
+      .page-container-down {
+        justify-content: flex-end;
+        margin-top: 32px;
+      }
+      .table-container {
+        .table-head {
+          .th.ratio {
+            font-weight: normal;
+          }
+        }
+        .table-body {
+          .coin-name>a,
+          .ex-name {
+            justify-content: flex-start;
+            padding-left: 52px;
+            .logo {
+              position: relative;
+              display: inline-block;
+              margin-right: 8px;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              overflow: hidden;
+              img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 100%;
+              }
+              >span {
+                display: flex;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                border-radius: 50%;
+                background-color: #fff;
+                >i {
+                  font-size: 20px;
+                  color: rgba(#c7d2dc, .8);
+                }
+              }
+            }
+          }
+          .action {
+            .button {
+              width: 80px;
+              background-color: #5F99DA;
+              color: #fff;
+              a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .concern-none {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin-top: 135px;
+      img {
+        width: 200px;
+      }
+      .add {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        border-radius: 100px;
+        width: 105px;
+        height: 40px;
+        box-shadow: 0 6px 23px 0 rgba(#3D99FF, 0.3);
+        font-size: 14px;
+        font-weight: bold;
+        i {
+          display: inline-block;
+          margin-right: 8px;
+          height: 40px;
+          line-height: 40px;
+        }
+        span {
+          display: inline-block;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+    .loading-page {
+      position: fixed;
+      display: flex;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      color: #5f99da;
+      img {
+        height: 60px;
+      }
+      &:first-of-type {
+        margin-top: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+$main-width: 1200px;
+$news-component-width: 752px;
+$actions-footer-height: 64px;
+
+
+// 头部
+$header-height: 64px;
+$margin-right: 20px;
+$tab-item-width: 72px;
+$border-bottom-width: 2px;
+// 脚部
+$footer-height: 64px;
+$footer-margin-height: 100px;
+
+
+$strong: #0B1013;
+$primary: #394551;
+$assist1: #707D8A;
+$assist2: #A8B4BF;
+
+$red:#ff6262;
+$green: #55dbb3;
+
+$main: #5F99DA;
+$bad: #55dbb3;
+$good: #ff6262;
+$search: #ffa162;
+$division: rgba(#202A33, .08);
+
+
+$em: #0B1013;
+$primary: #394551;
+$weak: #707D8A;
+$neglect: #A8B4BF;
+
+$font-size-xxxl: 32px;
+$font-size-xxl: 24px;
+$font-size-l: 16px;
+$font-size-m: 13px;
+$font-size-s: 12px;
+// $font-size-ss: 10px;
+
+$link: #5f99da;
+$blue: #5F99DA;
+
+// 前景色
+$front-active: #fff;
+
+// todo delete
+$btn-default: #EEF2F6;
+// $btn-front-positive: #ff6262;
+$btn-back-positive: #FF6262;
+// $btn-front-passive: #55dbb3;
+$btn-back-passive: #55dbb3;
+// $btn-front-default: #fff;
+$btn-back-default: #5f99da;
+
+$gap-xxs: 8px;
+$gap-xs: 10px;
+$gap-s: 12px;
+$gap: 16px;
+$gap-l: 20px;
+$gap-xl: 40px;
+$gap-xxl: 64px;
+
+$gap-article-top: 23px;
+$gap-article-bottom: 24px;
+
+$gap-news: 32px;
+
+$gap-icon-m: 8px;
+$gap-icon-s: 6px;
+
+$btn-gap-ud-s: 5px;
+$btn-gap-lr-s: 14px;
+
+$btn-gap-ud-m: 7px;
+$btn-gap-lr-m: 16px;
+
+$btn-size-s: 24px;
+$btn-size-m: 32px;
+
+$page-header: 64px;
+$page-min-width: 1200px;
+
+
+
+// 只有快讯border-bottom是2px 其余是1px
+$border-bottom-width: 2px;
+$border-primary: rgba(32, 42, 51, 0.08);
+$border-width: 1px;
+
+$font-size-interval-s: 11px;
+$font-size-interval-m: 13px;
+
+$line-height-xxxl: 45px;
+$line-height-xxl: 32px;
+$line-height-xl: 28px;
+$line-height-l: 24px;
+$line-height-m: 22px;
+$line-height-s: 20px;
+$line-height-ss: 16px;
+
+$border-radius-m: 6px;
+$broder-radius-s: 3px;
+
+@function add($val1, $val2) {
+    @return $val1 + $val2;
+}

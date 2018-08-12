@@ -1,0 +1,139 @@
+@import '../../common/variables.scss';
+@import '../button.scss';
+.press-container {
+  .panel {
+    >article.deep-card {
+      display: flex;
+      text-align: left;
+      margin-top: 20px;
+      >time {
+        display: flex;
+        flex-flow: column;
+        padding-top: 3px;
+        width: 96px;
+        font-size: 13px;
+        color: $assist2;
+      }
+      .article-container {
+        flex: 1;
+        border-bottom: 1px solid $division;
+        padding-bottom: 20px;
+        >a {
+          display: flex;
+          justify-content: space-between;
+          line-height: 22px;
+          background: rgba(238, 242, 246, 0.25);
+          border: 1px solid #EEF2F6;
+          border-radius: 6px;
+          .main-content {
+            max-height: 120px;
+            padding: 12px 16px;
+            text-align: justify;
+          }
+          .title {
+            font-size: 14px;
+            color: #0B1013;
+            margin-bottom: 8px;
+            &.hot {
+              &:before {
+                content: '热门';
+                display: inline-block;
+                width: 39px;
+                height: 20px;
+                background: $red;
+                color: #fff;
+                font-size: 12px;
+                vertical-align: text-top;
+                text-align: center;
+                line-height: 20px;
+                border-radius: 3px;
+                font-weight: lighter;
+                transform: scale(0.9);
+              }
+            }
+          }
+          .text {
+            flex: 1;
+            color: #394551;
+            line-height: 22px;
+            max-height: 66px;
+            word-wrap: break-word;
+            word-break: break-all;
+            font-size: 14px;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+          }
+          .img {
+            flex-shrink: 0;
+            height: 120px;
+            max-width: 128px;
+            overflow: hidden;
+            border-radius: 0 6px 6px 0;
+            >img {
+              height: 100%;
+            }
+            &.over {
+              position: relative;
+              height: 120px;
+              width: 128px;
+              overflow: hidden;
+              img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+            &.w-over {
+              img {
+                width: auto;
+                height: 120px;
+              }
+            }
+            &.h-over {
+              img {
+                width: 128px;
+                height: auto;
+              }
+            }
+          }
+        }
+        .author {
+          margin-top: 12px;
+          color: $assist2;
+        }
+        .button-container {
+          display: flex;
+          margin-top: 12px;
+          >.button {
+            height: 24px;
+          }
+          .button.collect {
+            &>span::before {
+              content: '收藏';
+            }
+            &.active>span::before {
+              content: '已收藏';
+            }
+          }
+        }
+      }
+      &:last-child>.article-container {
+        border-bottom: none;
+      }
+      &.picked {
+        .article-container .main-content {
+          h2 {
+            color: $red;
+          }
+          .article-content a .text {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}

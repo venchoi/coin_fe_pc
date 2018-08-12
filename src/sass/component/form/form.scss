@@ -1,0 +1,270 @@
+$input-border: rgba(199, 210, 220, 0.75);
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  .layer-header {
+    padding: 0 20px;
+    li.tab-item {
+      font-weight: bold;
+      color: $em;
+    }
+  }
+  .layer-content {
+    padding: 20px 24px;
+    .content-item[data-tab-1] {
+      .use-password {
+        width: 320px;
+      }
+      .use-password,
+      .use-verification {
+        >div {
+          margin-bottom: 16px;
+          &:last-child {
+            margin-bottom: none;
+          }
+        }
+      }
+    }
+    .content-item[data-tab-2] {
+      >div {
+        margin-bottom: 16px;
+        &:last-child {
+          margin-bottom: none;
+        }
+      }
+    }
+  }
+  .find-password,
+  .reset-password {
+    .layer-header {
+      border-bottom: none;
+      .tab-item {
+        font-weight: bold;
+        color: $em;
+      }
+    }
+  }
+  .content-item .form-content {
+    >div {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: none;
+      }
+    }
+  }
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    .reverse {
+      width: 74px;
+      height: 40px;
+      color: #394551;
+    }
+    .forward {
+      width: 100px;
+      height: 40px;
+      color: #fff;
+      background-color: #5f99da;
+    }
+    .button:hover {
+      color: #fff;
+    }
+  }
+  .reset-content {
+    .content-item>div:not(.button-container) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 512px;
+      label {
+        font-size: 13px;
+        color: #707d8a;
+      }
+      .form {
+        position: relative;
+        width: 336px;
+        .tips {
+          position: absolute;
+        }
+      }
+    }
+    .enter-password {
+      margin-bottom: 44px;
+      .tips {
+        margin: 8px 0 16px 0;
+        color: $assist2;
+      }
+    }
+  }
+  input {
+    padding: 10px 16px;
+    width: 100%;
+    background: rgba(238, 242, 246, 0.65);
+    border: 1px solid $input-border;
+    border-radius: 3px;
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-webkit-input-placeholder {
+      font-size: 13px;
+      color: #A8B4BF;
+    }
+  }
+  .phone {
+    height: 40px;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #0b1013;
+    text-align: center;
+    .input {
+      display: flex;
+      flex-flow: row nowrap;
+      .area-code {
+        flex-shrink: 0;
+        border-right: none;
+        width: 64px;
+        border-radius: 3px 0 0 3px;
+        color: $strong;
+      }
+      .phone-number {
+        flex-shrink: 1;
+        width: 255px;
+        border-radius: 0 3px 3px 0;
+        border-left: none;
+      }
+      .division {
+        flex-shrink: 0;
+        display: inline-block;
+        width: 1px;
+        height: 38px;
+        background-color: $input-border;
+        vertical-align: bottom;
+      }
+    }
+  }
+  .password {
+    width: 100%;
+  }
+  .verification {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    >.input {
+      width: 192px;
+      .verification-code {
+        width: 192px;
+        height: 100%;
+      }
+    }
+    .request-button {
+      width: 112px;
+      height: 100%;
+      font-size: 13px;
+      color: #394551;
+      &:hover {
+        color: #fff;
+      }
+      &:disabled, &.disabled {
+        color: #C7D2DC;
+        background-color: #EEF2F6;
+        &:hover {
+          color: #C7D2DC !important;
+          background-color: #EEF2F6;
+        }
+      }
+    }
+  }
+  .check-code {
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: 192px;
+    }
+    img {
+      width: 112px;
+    }
+  }
+  .other-ways {
+    text-align: left;
+    font-size: 12px;
+    color: #5f99da;
+    cursor: pointer;
+  }
+  .tips {
+    text-align: left;
+    font-size: 12px;
+    color: #707d8a;
+    a {
+      color: $link;
+    }
+  }
+  .input {
+    position: relative;
+    margin-right: 16px;
+    >.tip {
+      position: absolute;
+      top: 10px;
+      right: 16px;
+      font-size: 13px;
+      color: #FF6262;
+    }
+  }
+  .form-content>.form-m {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 512px;
+    label {
+      font-size: 13px;
+      color: #707d8a;
+    }
+    .form {
+      position: relative;
+      width: 336px;
+      .tips {
+        position: absolute;
+      }
+    }
+  }
+  .enter-password {
+    margin-bottom: 44px !important;
+    .tips {
+      margin: 8px 0 16px 0;
+    }
+  }
+  .phone-defult {
+    display: flex;
+    justify-content: space-between;
+    .phone-tip {
+      width: 192px;
+      text-align: left;
+      font-size: 13px;
+      color: #707D8A;
+    }
+    .phone-text {
+      width: 112px;
+      text-align: right;
+      font-size: 13px;
+      color: #0B1013;
+    }
+  }
+  .form-error {
+    background: rgba(238, 242, 246, 0.65);
+    border: 1px solid #FF6262;
+    border-radius: 3px;
+    input {
+      border: none;
+    }
+  }
+  .button-form {
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    color: #fff;
+  }
+}

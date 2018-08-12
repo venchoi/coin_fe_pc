@@ -1,0 +1,194 @@
+<div class="layer login hidden">
+  <div class="layer-bg"></div>
+  <div class="layer-dialog log-modal">
+    <div class="layer-header log-header">
+      <ul class="tabs">
+        <li class="tab-item active" data-tab="[data-tab-signin]">登录</li>
+        <li class="tab-item" data-tab="[data-tab-signup]">注册</li>
+        <div class="hover-line"></div>
+      </ul>
+      <div class="head-actions">
+        <div class="close">
+          <i class="iconfont icon-close"></i>
+        </div>
+      </div>
+    </div>
+    <div class="layer-content tabs-content log-content">
+      <div class="content-item active" data-tab-signin>
+        <div class="use-password" data-type="password">
+          <div class="phone">
+            <div class="input">
+              <input type="text" class="area-code" value="+86" placeholder="+86" disabled>
+              <span class="division"></span>
+              <input type="tel" class="phone-number" placeholder="手机号" />
+              <div class="tip"></div>
+            </div>
+          </div>
+          <div class="password">
+            <div class="input">
+              <input type="password" placeholder="密码">
+              <div class="tip"></div>
+            </div>
+          </div>
+          <div class="other-ways">
+            <span class="forget-password">忘记密码</span>
+            <span class="division"> · </span>
+            <span class="phone-verification">手机验证码登录</span>
+          </div>
+        </div>
+        <div class="use-verification hidden" data-type="verification">
+          <div class="phone">
+            <div class="input">
+              <input type="text" class="area-code" value="+86" placeholder="+86" disabled>
+              <span class="division"></span>
+              <input type="tel" class="phone-number" placeholder="手机号" />
+              <div class="tip"></div>
+            </div>
+          </div>
+          <div class="check-code">
+            <div class="input">
+              <input type="text" placeholder="输入右侧编码">
+              <div class="tip"></div>
+            </div>
+            <span>
+              <img src="/tool/verify/wapi/ajax.html" alt="">
+            </span>
+          </div>
+          <div class="verification">
+            <div class="input">
+              <input type="tel" class="verification-code" placeholder="手机验证码" />
+              <div class="tip"></div>
+            </div>
+            <div class="button main request-button" data-msg-type="log">获取验证码</div>
+          </div>
+          <div class="other-ways">
+            <span class="phone-password">使用账号登录</span>
+          </div>
+        </div>
+        <div class="button active sign-in">登录</div>
+      </div>
+      <div class="content-item" data-tab-signup>
+        <div class="phone">
+          <div class="input">
+            <input type="text" class="area-code" value="+86" placeholder="+86" disabled>
+            <span class="division"></span>
+            <input type="tel" class="phone-number" placeholder="手机号" />
+            <div class="tip"></div>
+          </div>
+        </div>
+        <div class="check-code">
+          <div class="input">
+            <input type="text" placeholder="输入右侧编码">
+            <div class="tip"></div>
+          </div>
+          <span>
+            <img src="/tool/verify/wapi/ajax.html" alt="">
+          </span>
+        </div>
+        <div class="verification">
+          <div class="input">
+            <input type="tel" class="verification-code" placeholder="手机验证码" />
+            <div class="tip"></div>
+          </div>
+          <div class="button main request-button" data-msg-type="reg">获取验证码</div>
+        </div>
+        <div class="create-password">
+          <div class="input">
+            <input type="password" placeholder="密码（6~16位，包含字母和数字）">
+            <div class="tip"></div>
+          </div>
+
+        </div>
+        <div class="tips">
+          <span>注册即代表同意</span>
+          <a href="/reg_protocol.html" target="_blank">《用户协议》</a>
+        </div>
+        <div class="button active sign-up">注册</div>
+      </div>
+    </div>
+  </div>
+  <div class="layer-dialog find-password-dialog hidden">
+    <div class="layer-header find-header">
+      <ul class="tabs">
+        <li class="tab-item">找回密码</li>
+      </ul>
+      <div class="head-actions">
+        <div class="close">
+          <i class="iconfont icon-close"></i>
+        </div>
+      </div>
+    </div>
+    <div class="layer-content find-content">
+      <div class="content-item">
+        <div class="phone">
+          <div class="input">
+            <input type="text" class="area-code" value="+86" placeholder="+86" disabled>
+            <span class="division"></span>
+            <input type="tel" class="phone-number" placeholder="手机号" />
+            <div class="tip"></div>
+          </div>
+        </div>
+        <div class="check-code">
+          <div class="input">
+            <input type="text" placeholder="输入右侧编码">
+            <div class="tip"></div>
+          </div>
+          <span>
+            <img src="/tool/verify/wapi/ajax.html" alt="">
+          </span>
+        </div>
+        <div class="verification">
+          <div class="input">
+            <input type="tel" class="verification-code" placeholder="手机验证码" />
+            <div class="tip"></div>
+          </div>
+          <div class="button main request-button" data-msg-type="find">获取验证码</div>
+        </div>
+        <div class="button-container">
+          <div class="button reverse back">返回</div>
+          <div class="button forward next">下一步</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="layer-dialog reset-password-dialog hidden">
+    <div class="layer-header reset-header">
+      <ul class="tabs">
+        <li class="tab-item">重设密码</li>
+      </ul>
+      <div class="head-actions">
+        <div class="close">
+          <i class="iconfont icon-close"></i>
+        </div>
+      </div>
+    </div>
+    <div class="layer-content reset-content">
+      <div class="content-item">
+        <div class="enter-password">
+          <label for="enter-password">输入密码</label>
+          <div class="form">
+            <div class="input">
+              <input type="password" name="enter-password" class="password" placeholder="密码">
+              <div class="tip"></div>
+            </div>
+
+            <div class="tips">6~16位，必须包含字母和至少一个数字</div>
+          </div>
+        </div>
+        <div class="check-password">
+          <label for="check-password">重设密码</label>
+          <div class="form">
+            <div class="input">
+              <input type="password" name="check-password" placeholder="确认密码">
+              <div class="tip"></div>
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <div class="button reverse cancel">取消</div>
+          <div class="button forward finish">完成</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
